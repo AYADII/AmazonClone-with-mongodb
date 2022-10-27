@@ -6,13 +6,78 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.site-container {
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+.btn-primary,.btn-outline-primary {
+  background-color: #f0c040;
+  color: #000000;
+  border: #000000;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.rating span {
+  color: #ffc000;
+}
+.product {
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+.product-info {
+  padding: 1rem;
+}
+.img-large {
+  max-width: 100%;
+}
+.img-thumbnail {
+  height: 80px;
+}
+.small-container {
+  max-width: 600px;
+}
 
-header{
-  background-color: #404040;
-  padding: 16px;
-}
-header a {
-  color: #ffffff;
+/* sideBar*/
+.navbar-brand{
   font-weight: bold;
-  text-decoration: none ;
 }
+.side-navbar{
+  width: 200px;
+  height: 300%;
+  position: absolute;
+  left: -300px;
+  background-color: #090909;
+  transition: 0.5s;
+}
+
+.site-container{
+  transition: 0.5s;
+}
+.active-cont{
+  margin-left: 200px;
+}
+.active-nav{
+  left: 0;
+}
+.basket__icon{
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
+} 
